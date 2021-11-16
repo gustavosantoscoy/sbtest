@@ -1,0 +1,40 @@
+<html>
+   <head>
+   <style>
+	iframe, #takePicture, #uploadPdf
+	{
+		display:none;
+	}
+	iframe
+	{
+		height:500px;
+		width:100%
+	}
+	video
+	{
+		width: 100%;
+		height: 500px;
+		border: 1px solid green;
+	}
+	canvas
+	{
+		display: none;
+	}
+   </style>
+   </head>
+   <body>
+      <video autoplay playsinline></video>
+	  <button id="takePicture">Take snapshot</button>
+      <button id="showVideo">Show Video</button>
+	  <button id="uploadPdf">Upload as PDF</button>
+	  <br>
+      <div id="errorMsg"></div>
+	  <iframe></iframe>
+	  <canvas></canvas>
+	     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
+      <script src="ScanCamera.js"></script>
+
+   </body>
+</html>
